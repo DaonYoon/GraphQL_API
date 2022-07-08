@@ -6,6 +6,7 @@ GraphQL
 // 보통 QET은 Query안에
 // POST는 Mutation 안에
 
-유저가 나한테서 Data를 받도록 하고싶다면 그건 Query type 안에 있어야함
-만약 USER가 나한테 DATA를 보내서 data를 가 database로 가거나
-무언가를 지우거나, 업데이트를 하거나 하면 그건 mutation로 가야함
+- 아폴로 서버를 실행하기 위해서는 반드시 최소 1개의 Query가 필요합니다.
+- type Query는 가장 기본적인 타입입니다.
+- Query에 넣는 필드들은 request할 수 있는 것들이 됩니다.
+- !를 쓰지 않으면 해당 필드는 nullable field가 됩니다. (null값을 가질 수 있는 필드)
